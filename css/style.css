@@ -312,6 +312,83 @@ a:hover {
 }
 .most-viewed .most-viewed-items a {
     display: inline-block;
+    padding: 0 0 40px;
     width: 100%;
     height: 100%;
 }
+.most-viewed .most-viewed-items .most-viewed-meta{
+    display: inline-block;
+    position: relative;
+}
+.most-viewed .most-viewed-items .most-viewed-meta .most-viewed-image {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.most-viewed .most-viewed-items .most-viewed-meta .most-viewed-image img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.most-viewed .most-viewed-items .most-viewed-meta .most-viewed-text {
+    display: inline-block;
+    padding: 20px 25px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.most-viewed .most-viewed-items .most-viewed-meta .most-viewed-text .item-name {
+    display: inline-block;
+    font-size: 32px;
+    color: #1b1e21;
+}
+.most-viewed .most-viewed-items .most-viewed-meta .most-viewed-text .item-cat {
+    display: inline-block;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #aeaeae;
+}
+.most-viewed .most-viewed-items .most-viewed-meta:hover .most-viewed-text {
+    background: rgba(0,0,0,.3);
+}
+.most-viewed .most-viewed-items .most-viewed-meta:hover .most-viewed-text .item-cat {
+    color: #ececec;
+}
+.most-viewed .most-viewed-items .most-viewed-meta:hover .most-viewed-text .item-name {
+    color: #ececec;
+}
+.services {
+    position: relative;
+}
+.services i {
+    display: inline-block;
+    padding: 0 60px 10px;
+    font-size: 44px;
+    color: #aeaeae;
+    transition: all .4s ease-in-out;
+}
+.services .service-info {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    transition: all .4s ease-in-out;
+}
+.services .service-explain {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #aeaeae;
+}
+.services .service-cont:hover {
+    color: #f4c3bc;
+}
+.services .service-cont:hover i {
+    color: #f4c3bc;
+}
+
