@@ -391,4 +391,132 @@ a:hover {
 .services .service-cont:hover i {
     color: #f4c3bc;
 }
+@media (max-width: 721px) {
+    .articles-items {
+        display: none;
+    }
+}
+.articles-items {
+    display: inline-block;
+    position: relative;
+}
+.articles-items ul {
+    display: flex;
+    justify-content: center;
+}
+.articles-items ul li {
+    display: inline-block;
+    margin: 0 15px 2px;
+}
+.articles-items ul li a {
+    display: inline-block;
+    padding: 15px 0;
+    height: 100%;
+    width: 100%;
+    color: #aeaeae;
+}
+.articles-items ul li:hover {
+    border-bottom: 2px solid #000000;
+    margin-bottom: 0;
+}
+.articles-items ul li:hover a {
+    color: #000000;
+}
+.gallery .gallery-items {
+    display: inline-block;
+    padding: 0;
+    margin: 0 0 20px;
+    position: relative;
+    overflow: hidden;
+}
+.gallery .gallery-items a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.gallery .gallery-items .gallery-like {
+    display: inline-block;
+    position: absolute;
+    top: 5%;
+    right: -14%;
+    padding: 5px 10px;
+}
+.gallery .gallery-items .gallery-like a {
+    display: inline-block;
+    padding: 5px;
+    color: #aeaeae;
+    font-size: 20px;
+}
+.gallery .gallery-items .gallery-like a:hover {
+    color: #f4c3bc;
+}
+.gallery .gallery-items .gallery-features{
+    display: inline-block;
+    position: absolute;
+    top: 33%;
+    right: -14%;
+}
+.gallery .gallery-items .gallery-features ul {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+}
+.gallery .gallery-items .gallery-features ul li {
+    display: inline-block;
+    padding: 5px 10px;
+    position: relative;
+}
+.gallery-features-info {
+    display: none;
+    position: absolute;
+    padding: 3px 6px;
+    margin: 0;
+    font-size: 12px;
+    top: 30%;
+    right: 130%;
+    background-color: #f4c3bc;;
+    color: #FFFFFF;
+}
+.gallery .gallery-items .gallery-features ul li a {
+    display: inline-block;
+    padding: 5px;
+    color: #aeaeae;
+    font-size: 20px;
+}
+.gallery .gallery-items .gallery-features ul li a:hover {
+    color: #f4c3bc;
+}
+.red-color {
+    color: red;
+}
+.gallery-info {
+    display: inline-block;
+    padding: 0 0 10px;
+    width: 100%;
+    height: 100%;
+}
+.gallery-info .gallery-name {
+    display: inline-block;
+    padding: 15px 10px 5px;
+}
+.gallery-info .gallery-name a {
+    display: inline-block;
+    padding: 10px 5px;
+}
+.gallery-info .gallery-price {
+    display: inline-block;
+    padding: 0 10px 20px;
+    font-size: 14px;
+    color: #aeaeae;
+}
+.gallery-items:hover{
+    box-shadow: 1px 2px 3px #aeaeae;
+}
+.gallery button {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 40px;
+    margin: 20px 0 70px;
+}
+
 
