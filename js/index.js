@@ -12,20 +12,6 @@ jQuery(document).ready(function ($) {
         $(this).css("border-bottom","2px solid #000000");
         $(this).find("a").css("color","#000000","border-bottom","0");
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     $(".gallery-items").hover(function () {
         $(this).find(".gallery-features").animate({right:'0%'},300);
     },function () {
@@ -41,15 +27,6 @@ jQuery(document).ready(function ($) {
     },function () {
         $(this).find(".gallery-features-info").hide(200);
     });
-
-
-
-
-
-
-
-
-
     $(".gallery-like").hover(function () {
         $(this).find(".gallery-features-info").show(200);
     },function () {
@@ -60,6 +37,38 @@ jQuery(document).ready(function ($) {
         $(this).find("a i").removeClass("fa fa-heartbeat").addClass("fa fa-heart red-color");
         $(".gallery-like .gallery-features-info").text("ViewWishList");
     });
+
+    //slider paeein safhe
+    $(".center").slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
+
 
 
 
