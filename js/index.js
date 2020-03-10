@@ -15,12 +15,12 @@ jQuery(document).ready(function ($) {
     $(".gallery-items").hover(function () {
         $(this).find(".gallery-features").animate({right:'0%'},300);
     },function () {
-        $(this).find(".gallery-features").animate({right:'-14%'},300);
+        $(this).find(".gallery-features").animate({right:'-49px'},300);
     });
     $(".gallery-items").hover(function () {
         $(this).find(".gallery-like").animate({right:'0%'},300);
     },function () {
-        $(this).find(".gallery-like").animate({right:'-14%'},300);
+        $(this).find(".gallery-like").animate({right:'-50px'},300);
     });
     $(".gallery-features ul li").hover(function () {
         $(this).find(".gallery-features-info").show(200);
