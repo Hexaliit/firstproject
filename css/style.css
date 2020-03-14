@@ -561,3 +561,131 @@ footer .footer-icon {
 footer .footer-icon:hover {
     color: #f4c3bc;
 }
+.header1-logo {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+}
+.header1-logo a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.header1-logo a img{
+    padding: 5px;
+}
+.header1-links ul .menu1-links {
+    display: inline-block;
+    padding: 7px 10px;
+    position: relative;
+}
+.borderlast{
+    border-bottom: 1px solid #FFFFFF;
+}
+.bordernext {
+    border-bottom: 1px solid #000000;
+}
+.header1-links ul .menu1-links a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 7px 10px;
+}
+.header1-links ul .menu1-links a .menu1-title {
+    display: inline-block;
+    color: #000000;
+}
+.header1-links ul .menu1-links a .menu1-icon {
+    display: inline-block;
+    margin: 0 0 0 4px;
+}
+.header2-link {
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 0;
+}
+.header2-link ul {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 2px 2px #ececec;
+}
+.header2-link ul .menu2-links {
+    display: inline-block;
+    padding: 0;
+    white-space: nowrap;
+}
+.header2-link ul .menu2-links a {
+    display: inline-block;
+    padding: 8px 80px 8px 8px;
+    color: #aeaeae;
+}
+.header2-link ul .menu2-links:hover {
+    background-color: #ececec;
+}
+.social1-icons {
+    position: relative;
+}
+.social1-icons .social-links{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+}
+.social1-icons .social-links:hover {
+    color: #f4c3bc;
+}
+.social1-icons .header-signin {
+    display: none;
+    padding: 15px;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    box-shadow: 1px 1px 1px 1px #aeaeae;
+    z-index: 99;
+}
+.social1-icons .header-signin .signin-info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #aeaeae;
+}
+.social1-icons .header-signin .signin-info h4 {
+    display: inline-block;
+    padding: 0;
+    margin: 5px 120px 5px 0;
+    white-space: nowrap;
+    font-size: 18px;
+    color: #aeaeae;
+}
+.social1-icons .header-signin .signin-info .signin-links {
+    display: inline-block;
+    color: #f4c3bc;
+    white-space: nowrap;
+    text-align: left;
+}
+.social1-icons .header-signin .signin-info .signin-links:hover {
+    text-decoration: underline;
+}
+.social1-icons .header-signin .signin-boxes .signin-links {
+    display: inline-block;
+    color: #f4c3bc;
+    white-space: nowrap;
+    text-align: left;
+}
+.social1-icons .header-signin .signin-boxes .signin-links:hover {
+    text-decoration: underline;
+}
+.social1-icons .header-signin .signin-boxes p {
+    text-align: left;
+    color: #aeaeae;
+}
+.social1-icons .header-signin .signin-boxes input {
+    width: 100%;
+}
+.social1-icons .header-signin .signin-boxes button {
+    width: 100%;
+    margin: 15px 0;
+}

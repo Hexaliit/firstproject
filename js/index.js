@@ -67,7 +67,20 @@ jQuery(document).ready(function ($) {
             }
         ]
     });
-
+    // navbar edited
+    $(".menu1-links").hover(function () {
+        $(this).find(".header2-link").show(200);
+        $(this).find(".menu1-title").removeClass("borderlast").addClass("bordernext");
+    },function () {
+        $(this).find(".header2-link").hide(200);
+        $(this).find(".menu1-title").removeClass("bordernext").addClass("borderlast");
+    });
+    //account signin
+    $(".social-links").hover(function () {
+        $(this).next().fadeIn();
+    },function () {
+        $(this).next().fadeOut();
+    });
 
 
 
