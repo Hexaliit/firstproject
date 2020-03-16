@@ -69,19 +69,20 @@ jQuery(document).ready(function ($) {
     });
     // navbar edited
     $(".menu1-links").hover(function () {
-        $(this).find(".header2-link").show(200);
         $(this).find(".menu1-title").removeClass("borderlast").addClass("bordernext");
     },function () {
-        $(this).find(".header2-link").hide(200);
         $(this).find(".menu1-title").removeClass("bordernext").addClass("borderlast");
     });
-    //account signin
-    $(".social-links").hover(function () {
-        $(this).next().fadeIn();
+    $(".addtowish-btn").hover(function () {
+        $(this).next().show(100);
     },function () {
-        $(this).next().fadeOut();
+        $(this).next().hide(100);
     });
-
+    $(".product-generall-links").click(function () {
+        var links=$(this).attr("href");
+        $(".olive").hide(0);
+        $(links).show(0);
+    });
 
 
 
