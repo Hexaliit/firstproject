@@ -83,7 +83,13 @@ jQuery(document).ready(function ($) {
         $(".olive").hide(0);
         $(links).show(0);
     });
-
+    /* Open the sidenav */
+    $("#search").click(function () {
+        $("#my-search").animate({width:'100%'},300);
+    });
+    $("#my-close-btn").click(function () {
+        $("#my-search").animate({width:'0'},300);
+    });
 
 
 

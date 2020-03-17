@@ -914,8 +914,90 @@ th , td {
     font-weight: bold;
     padding: 10px;
 }
-
-
-
-
-
+.my-search-nav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: rgba(0,0,0,.8); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s;
+}
+.my-search-nav .search-container {
+    padding: 0 300px;
+}
+.my-search-nav .search-container input {
+    padding: 15px;
+    font-size: 24px;
+    text-align: center;
+    border: 0;
+    color: #777777;
+    width: 100%;
+    border-bottom: 1px solid #ececec;
+    background-color: inherit;
+}
+.my-search-nav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    color: #aeaeae;
+}
+@media screen and (max-height: 450px) {
+    .my-search-nav {padding-top: 15px;}
+    .my-search-nav a {font-size: 18px;}
+}
+.search-container .search-fetched {
+    padding: 20px;
+    margin: 10px 0 0;
+    background-color: #FFFFFF;
+    text-align: left;
+}
+.search-fetched ul {
+    margin-bottom: 30px;
+}
+.search-fetched ul li {
+    margin-bottom: 30px;
+}
+.search-fetched ul li .search-fetched-items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+.search-fetched ul li .search-fetched-items:hover {
+    color: #f4c3bc;
+}
+.search-fetched ul li .search-fetched-items .fetched-img img {
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+}
+.search-fetched ul li .search-fetched-items  .fetched-content {
+    padding: 5px;
+}
+.search-fetched ul li .search-fetched-items  .fetched-content .fetched-items-price {
+    display: inline;
+    font-size: 20px;
+    color: #1b1e21;
+    margin: 0 0 0 10px;
+    padding: 5px 0;
+}
+.search-fetched ul li .search-fetched-items  .fetched-content .fetched-items-title {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 10px 0;
+}
+.search-fetched .fetched-items-related {
+    display: inline;
+    padding: 5px 2px;
+    border-bottom: 1px solid #000000;
+    color: #000000;
+}
+.search-fetched .fetched-items-related:hover {
+    color: #f4c3bc;
+}
