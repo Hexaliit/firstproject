@@ -90,7 +90,48 @@ jQuery(document).ready(function ($) {
     $("#my-close-btn").click(function () {
         $("#my-search").animate({width:'0'},300);
     });
-
+    $("#filter").click(function () {
+        $(".filter-window").animate({width:'300px'},300);
+    });
+    $("#close-filter-btn").click(function () {
+        $(".filter-window").animate({width:'0'},100);
+    });
+    $('.brand').slick({
+        autoplay: true,
+        autoplaySpeed:3000,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        infinite:true,
+        arrows:false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
 
 
 
