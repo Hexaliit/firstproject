@@ -201,6 +201,9 @@ a:hover {
     }
 
 }
+.menu-btn-responsive {
+    display: none;
+}
 .shop-cat {
     display: inline-block;
     padding: 150px 0 20px;
@@ -307,7 +310,79 @@ a:hover {
 .services .service-cont:hover i {
     color: #f4c3bc;
 }
+.menu-responsive-container {
+    display: none;
+}
+.pink-active {
+    color: #f4c3bc;
+}
+.bar-handler {
+    display: none;
+}
 @media screen and (max-width: 721px) {
+    .menu-btn-responsive {
+        display: inline-block !important;
+        text-align: right;
+    }
+    .menu-btn-responsive #menu-responsive {
+        color: #f4c3bc;
+        font-size: 24px;
+        padding: 5px;
+    }
+    .menu-responsive-container {
+        display: inline-block !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        background: #FFFFFF;
+        z-index: 10;
+        overflow-y: scroll;
+    }
+    .menu-responsive-container .responsive-close {
+        position: relative;
+    }
+    .menu-responsive-container .responsive-close #responsive-close-btn{
+        position: absolute;
+        top: 0;
+        right: 28px;
+        padding: 7px;
+        font-size: 36px;
+        color: #f4c3bc;
+    }
+    .menu-responsive-container .response-1level {
+        display: none;
+        margin: 50px 0;
+    }
+    .menu-responsive-container .response-1level .responsive-items {
+        width: 100%;
+        padding: 7px 0;
+        color: #333333;
+        font-size: 18px;
+    }
+    .menu-responsive-container .response-1level .responsive-items .response-2level {
+        display: none;
+        padding: 10px 0;
+        margin: 0 50px;
+    }
+    .menu-responsive-container .response-1level .responsive-items .response-2level .response-2level-items {
+        padding: 10px 0;
+    }
+    .menu-responsive-container .response-1level .responsive-items .response-2level .response-2level-items  a {
+        width: 100%;
+        color: #333333;
+        display: block;
+    }
+    .menu-responsive-container .response-1level .responsive-items .responsive-links {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 40px;
+        color: #333333;
+    }
+    .header1-links, .header1-socials {
+        display: none !important;
+    }
     .articles-items {
         display: none;
     }
@@ -329,6 +404,39 @@ a:hover {
     }
     .recent-post-container ul .recent-title img  {
         max-width: 30% !important;
+    }
+    .bar-handler {
+        display: block!important;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #3f4448;
+        z-index: 100;
+        border-top: 1px solid rgba(255,255,255,.2);
+    }
+    .bar-handler .bar-links {
+        display: block;
+        color: #FFFFFF;
+        font-size: 26px;
+        width: 100%;
+        height: 100%;
+        padding: 13px 0;
+    }
+    .bar-handler .bar-search {
+        display: none;
+        padding: 10px 30px;
+        border-bottom: 1px solid #ececec;
+        background: rgba(0,0,0,.1);
+    }
+    .bar-handler .bar-search input , .bar-handler .bar-search button {
+        padding: 12px;
+    }
+    .bar-handler .bar-search button i {
+        margin: 0 0 0 5px;
+    }
+    .footer-down {
+        margin-bottom: 75px;
     }
 }
 .articles-items {
@@ -583,6 +691,9 @@ footer .footer-icon {
 }
 footer .footer-icon:hover {
     color: #f4c3bc;
+}
+footer .footer-border {
+    width: 100%;
 }
 .header1-logo {
     display: inline-block;

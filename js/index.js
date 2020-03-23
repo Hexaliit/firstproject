@@ -132,7 +132,23 @@ jQuery(document).ready(function ($) {
             // instead of a settings object
         ]
     });
+    $("#menu-responsive").click(function () {
+        $(".menu-responsive-container").animate({width:'100%'},300);
+        $(".menu-responsive-container ul").show();
 
+    });
+    $("#responsive-close-btn").click(function () {
+        $(".menu-responsive-container").animate({width:'0'},300);
+        $(".menu-responsive-container ul").hide();
+    });
+    $(".responsive-items").click(function () {
+        $(this).find(".response-2level").slideToggle(100);
+        $(this).find(".responsive-links i").toggleClass("fa fa-angle-right");
+        $(this).find(".responsive-links i").toggleClass("fa fa-angle-down pink-active");
+    });
+    $("#bar-search-btn").click(function () {
+        $(".bar-search").slideToggle(100);
+    });
 
 
 });

@@ -17,8 +17,9 @@
 <body>
     <header>
         <div class="container-fluid">
-            <div class="row align-items-center">
+            <div class="row align-items-center justify-content-between">
                 <div class="col-md-2 col-6"><div class="header1-logo"><a href="#"><img src="images/logo_mixmart_1.svg" alt=""></a></div></div>
+                <div class="col-3 menu-btn-responsive"><a href="#" id="menu-responsive"><i class="fa fa-align-right"></i></a></div>
                 <div class="col-md-8 col-12 text-center header1-links">
                     <ul>
                         <li class="menu1-links"><a href="#"><span class="menu1-title borderlast">Home</span><span class="menu1-icon fa fa-angle-down"></span></a>
@@ -149,6 +150,68 @@
                 </ul>
             </div>
         </div>
+    </div>
+    <div class="menu-responsive-container">
+        <div class="responsive-close"><a href="#" id="responsive-close-btn">&times;</a></div>
+        <ul class="response-1level">
+            <li class="responsive-items">
+                <a href="#" class="responsive-links"><span>Home</span><i class="fa fa-angle-right"></i></a>
+                <div class="response-2level">
+                    <div class="response-2level-items"><a href="#">Home1</a></div>
+                    <div class="response-2level-items"><a href="#">Home2</a></div>
+                    <div class="response-2level-items"><a href="#">Home3</a></div>
+                    <div class="response-2level-items"><a href="#">Home4</a></div>
+                    <div class="response-2level-items"><a href="#">Home5</a></div>
+                </div>
+            </li>
+            <li class="responsive-items"><a href="#" class="responsive-links"><span>Shop</span><i class="fa fa-angle-right"></i></a>
+                <div class="response-2level">
+                    <div class="response-2level-items"><a href="#">Home1</a></div>
+                    <div class="response-2level-items"><a href="#">Home2</a></div>
+                    <div class="response-2level-items"><a href="#">Home3</a></div>
+                    <div class="response-2level-items"><a href="#">Home4</a></div>
+                    <div class="response-2level-items"><a href="#">Home5</a></div>
+                </div>
+            </li>
+            <li class="responsive-items"><a href="#" class="responsive-links"><span>Product</span><i class="fa fa-angle-right"></i></a>
+                <div class="response-2level">
+                    <div class="response-2level-items"><a href="#">Home1</a></div>
+                    <div class="response-2level-items"><a href="#">Home2</a></div>
+                    <div class="response-2level-items"><a href="#">Home3</a></div>
+                    <div class="response-2level-items"><a href="#">Home4</a></div>
+                    <div class="response-2level-items"><a href="#">Home5</a></div>
+                </div>
+            </li>
+            <li class="responsive-items"><a href="#" class="responsive-links"><span>Page</span><i class="fa fa-angle-right"></i></a>
+                <div class="response-2level">
+                    <div class="response-2level-items"><a href="#">Home1</a></div>
+                    <div class="response-2level-items"><a href="#">Home2</a></div>
+                    <div class="response-2level-items"><a href="#">Home3</a></div>
+                    <div class="response-2level-items"><a href="#">Home4</a></div>
+                    <div class="response-2level-items"><a href="#">Home5</a></div>
+                </div>
+            </li>
+            <li class="responsive-items"><a href="#" class="responsive-links"><span>Blog</span><i class="fa fa-angle-right"></i></a>
+                <div class="response-2level">
+                    <div class="response-2level-items"><a href="#">Home1</a></div>
+                    <div class="response-2level-items"><a href="#">Home2</a></div>
+                    <div class="response-2level-items"><a href="#">Home3</a></div>
+                    <div class="response-2level-items"><a href="#">Home4</a></div>
+                    <div class="response-2level-items"><a href="#">Home5</a></div>
+                </div>
+            </li>
+            <li class="responsive-items"><a href="#" class="responsive-links"><span>Home</span><i class="fa fa-angle-right"></i></a>
+                <div class="response-2level">
+                    <div class="response-2level-items"><a href="#">Home1</a></div>
+                    <div class="response-2level-items"><a href="#">Home2</a></div>
+                    <div class="response-2level-items"><a href="#">Home3</a></div>
+                    <div class="response-2level-items"><a href="#">Home4</a></div>
+                    <div class="response-2level-items"><a href="#">Home5</a></div>
+                </div>
+            </li>
+            <li class="responsive-items"><a href="#" class="responsive-links">Contact us</a></li>
+            <li class="responsive-items"><a href="#" class="responsive-links">Onsale</a></li>
+        </ul>
     </div>
 </section>
 <section class="main">
@@ -292,16 +355,19 @@
         </div>
     </div>
 </section>
-
-
-
-
-
-
-
-
-
-
+<div class="bar-handler">
+    <div class="bar-search">
+        <div class="row align-items-center">
+            <input type="text" class="col-8">
+            <button class="btn btn-danger col-4">search<i class="fa fa-search"></i></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 text-center"><a href="" class="bar-links"><i class="fa fa-user"></i></a></div>
+        <div class="col-4 text-center"><a href="#" class="bar-links" id="bar-search-btn"><i class="fa fa-search"></i></a></div>
+        <div class="col-4 text-center"><a href="" class="bar-links"><i class="fa fa-file"></i></a></div>
+    </div>
+</div>
 <footer>
     <div class="container-fluid">
         <div class="row">
@@ -310,45 +376,39 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3">
-                <div class="row row-cols-1">
-                    <div class="col"><p>T : +1123456789</p></div>
-                    <div class="col"><p>E : AMEDEO@ELATED.COM</p></div>
-                    <div class="col"><p>A : VIA SACRA 11, ROME</p></div>
-                </div>
+            <div class="col-md-3 col-12">
+                <div><p>T : +1123456789</p></div>
+                <div><p>E : AMEDEO@ELATED.COM</p></div>
+                <div><p>A : VIA SACRA 11, ROME</p></div>
             </div>
-            <div class="col-md-3">
-                <div class="row row-cols-1">
-                    <div class="col"><a href="#" class="footer-links">SHOP</a></div>
-                    <div class="col"><a href="#" class="footer-links">OUTWORK</a></div>
-                    <div class="col"><a href="#" class="footer-links">HISTORY</a></div>
-                </div>
+            <div class="col-md-3 col-12">
+                <div><a href="#" class="footer-links">SHOP</a></div>
+                <div><a href="#" class="footer-links">OUTWORK</a></div>
+                <div><a href="#" class="footer-links">HISTORY</a></div>
             </div>
-            <div class="col-md-3">
-                <div class="row row-cols-1">
-                    <div class="col"><a href="#" class="footer-links">ABOUT US</a></div>
-                    <div class="col"><a href="#" class="footer-links">PRIVACYPOLICY</a></div>
-                    <div class="col"><a href="#" class="footer-links">CONTACT</a></div>
-                </div>
+            <div class="col-md-3 col-12">
+                <div><a href="#" class="footer-links">ABOUT US</a></div>
+                <div><a href="#" class="footer-links">PRIVACYPOLICY</a></div>
+                <div><a href="#" class="footer-links">CONTACT</a></div>
             </div>
-            <div class="col-md-3">
-                <div class="row row-cols-1">
-                    <div class="col"><p>NEWSLETTER</p></div>
-                    <div class="col footer-border"><input type="text" placeholder="YOUR E-MAIL"><a href="#" class="send-btn">SEND</a></div>
-                </div>
+            <div class="col-md-3 col-12">
+                <div><p>NEWSLETTER</p></div>
+                <div class="footer-border"><input type="text" placeholder="YOUR E-MAIL"><a href="#" class="send-btn">SEND</a></div>
             </div>
         </div>
     </div>
 </footer>
 <footer>
-    <div class="container-fluid">
-        <div class="row justify-content-between">
-            <div class="col-md-2 text-center"><p>2019 MIXMART THEMES</p></div>
-            <div class="col-md-2 text-center">
-                <div class="row justify-content-center">
-                    <div class="col-sm-1"><a href="#" class="footer-icon"><i class="fa fa-twitter"></i></a></div>
-                    <div class="col-sm-1"><a href="#" class="footer-icon"><i class="fa fa-instagram"></i></a></div>
-                    <div class="col-sm-1"><a href="#" class="footer-icon"><i class="fa fa-facebook"></i></a></div>
+    <div class="footer-down">
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="col-md-2 text-center"><p>2019 MIXMART THEMES</p></div>
+                <div class="col-md-2 text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-1"><a href="#" class="footer-icon"><i class="fa fa-twitter"></i></a></div>
+                        <div class="col-1"><a href="#" class="footer-icon"><i class="fa fa-instagram"></i></a></div>
+                        <div class="col-1"><a href="#" class="footer-icon"><i class="fa fa-facebook"></i></a></div>
+                    </div>
                 </div>
             </div>
         </div>
